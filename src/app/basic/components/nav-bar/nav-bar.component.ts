@@ -8,10 +8,14 @@ import { Component } from '@angular/core';
 export class NavBarComponent {
   isSidebarOpen = false;
 
-  toggleSidebar(event?: Event): void {
-    if (event) {
-      event.stopPropagation();
-    }
+  navLinks = [
+    { path: '/basic/home', label: 'Home' },
+    { path: '/basic/services', label: 'Services' },
+    { path: '/basic/about', label: 'About' },
+    { path: '/basic/contact', label: 'Contact' }
+  ];
+
+  toggleSidebar(): void {
     this.isSidebarOpen = !this.isSidebarOpen;
   }
 }

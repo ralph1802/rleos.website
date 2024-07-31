@@ -1,32 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutPageComponent } from './basic/pages/about-page/about-page.component';
-import { ContactPageComponent } from './basic/pages/contact-page/contact-page.component';
-import { HomePageComponent } from './basic/pages/home-page/home-page.component';
-import { ServicesPageComponent } from './basic/pages/services-page/services-page.component';
 
 const routes: Routes = [
-
   {
-    path: 'about',
-    component: AboutPageComponent,
+    path: 'basic',
+    loadChildren: () => import('./basic/basic-pages.module').then(m => m.BasicPagesModule)
   },
-
-  {
-    path: 'contact',
-    component: ContactPageComponent,
-  },
-
-  {
-    path: 'home',
-    component: HomePageComponent,
-  },
-
-  {
-    path: 'services',
-    component: ServicesPageComponent,
-  },
-
+  { path: '**', redirectTo: 'basic/home' }  // Redirige a la ruta básica predeterminada
 ];
 
 @NgModule({

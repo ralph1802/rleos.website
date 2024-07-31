@@ -2,22 +2,20 @@
   <div class="navbar-container">
     <nav class="navbar">
       <ul class="navbar-links">
-        <li><a routerLink="/home" (click)="toggleSidebar()">Home</a></li>
-        <li><a routerLink="/services" (click)="toggleSidebar()">Services</a></li>
-        <li><a routerLink="/about" (click)="toggleSidebar()">About</a></li>
-        <li><a routerLink="/contact" (click)="toggleSidebar()">Contact</a></li>
+        <li *ngFor="let link of navLinks">
+          <a [routerLink]="link.path" (click)="toggleSidebar()">{{ link.label }}</a>
+        </li>
       </ul>
       <img src="/assets/images/ralph.sites.png" alt="Logo" class="logo">
-      <button class="menu-btn" (click)="toggleSidebar($event)">&#9776;</button>
+      <button class="menu-btn" (click)="toggleSidebar()">&#9776;</button>
     </nav>
   </div>
   <aside class="sidebar" [ngClass]="{'open': isSidebarOpen}">
     <button class="close-btn" (click)="toggleSidebar()">&times;</button>
     <ul class="navbar-links">
-      <li><a routerLink="/home" (click)="toggleSidebar()">Home</a></li>
-      <li><a routerLink="/services" (click)="toggleSidebar()">Services</a></li>
-      <li><a routerLink="/about" (click)="toggleSidebar()">About</a></li>
-      <li><a routerLink="/contact" (click)="toggleSidebar()">Contact</a></li>
+      <li *ngFor="let link of navLinks">
+        <a [routerLink]="link.path" (click)="toggleSidebar()">{{ link.label }}</a>
+      </li>
     </ul>
   </aside>
 </div>
