@@ -18,4 +18,8 @@ export class NavBarComponent {
   toggleSidebar(): void {
     this.isSidebarOpen = !this.isSidebarOpen;
   }
+
+  closeSidebar(): void {
+    this.isSidebarOpen = false;
+  }
 }

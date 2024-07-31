@@ -92,16 +92,13 @@
     transform: translateX(0);
   }
 
-  .sidebar .close-btn {
-    display: block;
-    background: none;
-    border: none;
-    color: #ffff;
-    font-size: 30px;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
   }
 
   .sidebar .navbar-links {

@@ -3,18 +3,18 @@
     <nav class="navbar">
       <ul class="navbar-links">
         <li *ngFor="let link of navLinks">
-          <a [routerLink]="link.path" (click)="toggleSidebar()">{{ link.label }}</a>
+          <a [routerLink]="link.path" (click)="closeSidebar()">{{ link.label }}</a>
         </li>
       </ul>
       <a href="#"><img src="/assets/images/ralph.sites.png" alt="Logo" class="logo"></a>
       <button class="menu-btn" (click)="toggleSidebar()">&#9776;</button>
     </nav>
   </div>
+  <div class="overlay" *ngIf="isSidebarOpen" (click)="closeSidebar()"></div>
   <aside class="sidebar" [ngClass]="{'open': isSidebarOpen}">
-    <button class="close-btn" (click)="toggleSidebar()">&times;</button>
     <ul class="navbar-links">
       <li *ngFor="let link of navLinks">
-        <a [routerLink]="link.path" (click)="toggleSidebar()">{{ link.label }}</a>
+        <a [routerLink]="link.path" (click)="closeSidebar()">{{ link.label }}</a>
       </li>
     </ul>
   </aside>
