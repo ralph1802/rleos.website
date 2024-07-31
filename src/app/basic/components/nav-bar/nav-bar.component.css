@@ -46,7 +46,6 @@
   background: none;
   border: none;
   color: #ffff;
-  font-size: 30px;
   cursor: pointer;
   order: 2;
 }
@@ -55,17 +54,12 @@
   display: none;
 }
 
-/* estilos para pantallas menores a 800px */
+/* estilos pantallas >800px */
 @media (max-width: 800px) {
   .navbar {
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-  }
-
-  .menu-btn {
-    display: block;
-    font-size: 20px;
   }
 
   .navbar-links {
@@ -75,12 +69,12 @@
   .sidebar {
     position: fixed;
     top: 50px;
-    left: 0;
+    right: 0;
     height: 100%;
     width: 150px;
     background-color: #121212;
     color: white;
-    transform: translateX(-100%);
+    transform: translateX(100%);
     transition: transform 0.3s ease;
     z-index: 1000;
     padding: 20px;
@@ -105,11 +99,68 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: 60px;
     font-size: 12px;
+  }
+
+  .sidebar .navbar-links a {
+    display: block;
+    padding: 12px 0;
+    font-size: 14px;
+    text-align: center;
   }
 
   .sidebar .navbar-links li {
     margin-bottom: 10px;
+    text-align: center;
+  }
+
+  /* estilos generales de botón */
+  .menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .menu-btn .line {
+    position: absolute;
+    height: 2px;
+    width: 50%;
+    background-color: #ffff;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    left: 25%;
+  }
+
+  .menu-btn .line-1 {
+    top: 0;
+  }
+
+  .menu-btn .line-2 {
+    top: 5px;
+  }
+
+  .menu-btn .line-3 {
+    top: 10px;
+  }
+
+  /* animacion botón */
+  .menu-btn.open .line-1 {
+    transform: rotate(45deg);
+    top: 5px;
+    width: 50%;
+  }
+
+  .menu-btn.open .line-2 {
+    opacity: 0;
+  }
+
+  .menu-btn.open .line-3 {
+    transform: rotate(-45deg);
+    top: 5px;
+    width: 50%;
   }
 }
