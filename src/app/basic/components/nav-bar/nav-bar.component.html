@@ -1,0 +1,21 @@
+<div class="navbar-container">
+  <nav class="navbar">
+    <ul class="navbar-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <img src="/assets/images/ralph.sites.png" alt="Logo" class="logo">
+    <button class="menu-btn" (click)="toggleSidebar()">&#9776;</button>
+  </nav>
+</div>
+<aside class="sidebar" [ngClass]="{'open': isSidebarOpen}">
+  <button class="close-btn" (click)="toggleSidebar()">&times;</button>
+  <ul class="navbar-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</aside>
