@@ -35,7 +35,7 @@
 
 .logo {
   max-width: 200px;
-  width: 100px;
+  width: 80px;
   margin: 0;
   align-items: flex-start;
   order: 0;
@@ -74,7 +74,7 @@
 
   .sidebar {
     position: fixed;
-    top: 0;
+    top: 50px;
     left: 0;
     height: 100%;
     width: 150px;
@@ -114,9 +114,5 @@
 
   .sidebar .navbar-links li {
     margin-bottom: 10px;
-  }
-
-  .logo {
-    margin: 0 auto;
   }
 }
