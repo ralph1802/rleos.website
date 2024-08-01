@@ -17,5 +17,5 @@ body {
   font-family: 'Inter', sans-serif;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  background: #1E1E1E;
+  /* background: #1E1E1E; */
 }

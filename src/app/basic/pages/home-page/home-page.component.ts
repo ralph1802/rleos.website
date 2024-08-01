@@ -17,6 +17,7 @@ export class HomePageComponent implements AfterViewInit {
     "안녕하세요 세계", // Coreano
     "你好，世界",      // Chino
     "Olá Mundo",     // Portugués
+    "Olá Mundo"      // Portugués (Brasil)
   ];
 
   private indexTexto: number = 0;

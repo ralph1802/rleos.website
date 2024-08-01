@@ -1,0 +1,105 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #000;
+  padding: 20px;
+}
+
+
+.logo {
+  display: none;
+}
+
+.footer-section {
+  color: #fff;
+  padding: 10px;
+}
+
+.footer-section h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  padding: 5px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+
+.footer-section p a:hover {
+  text-decoration: underline;
+}
+
+.dev {
+  padding: 20px;
+  background-color: #000;
+  border-top: 1px solid #fff;
+}
+
+.dev p {
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+}
+
+/* Estilos para el enlace dentro del contenedor */
+.dev a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.dev a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+  .footer {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .footer-section {
+    margin-bottom: 10px;
+  }
+
+  .footer-section a {
+    min-height: 48px;
+    min-width: 48px;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .footer-section li {
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .dev {
+    text-align: center;
+  }
+
+}

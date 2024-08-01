@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'services', component: ServicesPageComponent },
   { path: 'about', component: AboutPageComponent },
   { path: 'contact', component: ContactPageComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' }  // Redirige a HomePage si la ruta es vacía
+  { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
 @NgModule({
