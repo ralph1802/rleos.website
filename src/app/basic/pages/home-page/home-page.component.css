@@ -1,12 +1,46 @@
+/* estilos contenedor */
 .container {
-  max-width: 1000px;
+  position: relative;
+  width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 0;
+  overflow: hidden;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* estilos video fondo */
+.video-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0.5;
+}
+
+/* estilos titulo */
+.titulo {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+}
+
+.titulo h1 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 300;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
 }
 
 @media (max-width: 800px) {
   .container {
-    max-width: 100%;
-    padding: 0 10px;
+    padding: 0;
   }
 }
