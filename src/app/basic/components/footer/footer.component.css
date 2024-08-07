@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   justify-content: space-around;
-  background-color: #1E1E1E;
+  background-color: #000;
   padding: 20px;
 }
 
@@ -47,7 +47,7 @@
 
 .dev {
   padding: 20px;
-  background-color: #1E1E1E;
+  background-color: #000;
   border-top: 1px solid #fff;
 }
 

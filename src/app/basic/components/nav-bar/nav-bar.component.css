@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 30px;
-  background-color: #1E1E1E;
+  background-color: #000;
   color: white;
   font-size: 12px;
   height: 50px;
@@ -31,6 +31,10 @@
   color: #ffff;
   text-decoration: none;
   padding: 10px 20px;
+}
+
+.navbar-links a:hover {
+  color: #ccc ;
 }
 
 .logo {
@@ -72,7 +76,7 @@
     right: 0;
     height: 100%;
     width: 150px;
-    background-color: #121212;
+    background-color: #000;
     color: white;
     transform: translateX(100%);
     transition: transform 0.3s ease;
