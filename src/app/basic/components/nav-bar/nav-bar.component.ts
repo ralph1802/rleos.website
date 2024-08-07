@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'basic-nav-bar',
@@ -15,11 +15,21 @@ export class NavBarComponent {
     { path: '/basic/contact', label: 'Contact' }
   ];
 
+  // Alterna el estado del sidebar
   toggleSidebar(): void {
     this.isSidebarOpen = !this.isSidebarOpen;
   }
 
+  // Cierra el sidebar
   closeSidebar(): void {
     this.isSidebarOpen = false;
+  }
+
+
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll() {
+    if (window.scrollY > 40) {
+      this.closeSidebar();
+    }
   }
 }
