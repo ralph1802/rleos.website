@@ -16,6 +16,7 @@
   </div>
   <div class="overlay" *ngIf="isSidebarOpen" (click)="closeSidebar()"></div>
   <aside class="sidebar" [ngClass]="{'open': isSidebarOpen}">
+    <button class="close-btn" (click)="closeSidebar()">✕</button>
     <ul class="navbar-links">
       <li *ngFor="let link of navLinks">
         <a [routerLink]="link.path">{{ link.label }}</a>

@@ -1,8 +1,11 @@
 .footer {
+  width: 70%;
+  margin: auto;
   display: flex;
   justify-content: space-around;
-  background-color: #000;
-  padding: 20px;
+  background-color: #121212;
+  padding-top: 20px;
+  border-radius: 15px 15px 0px 0px;
 }
 
 
@@ -46,9 +49,14 @@
 }
 
 .dev {
-  padding: 20px;
-  background-color: #000;
-  border-top: 1px solid #fff;
+  width: 70%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: #121212;
+  border-top: 1px solid #2e2e2e;
+  border-radius: 0px 0px 15px 15px;
 }
 
 .dev p {
@@ -68,7 +76,7 @@
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .footer {
     text-align: center;
     flex-direction: column;

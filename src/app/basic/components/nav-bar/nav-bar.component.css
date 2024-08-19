@@ -1,7 +1,8 @@
 /* estilos generales */
 .navbar-container {
-  width: 100%;
+  width: 70%;
   font-weight: 400;
+  margin: auto;
 }
 
 .navbar {
@@ -9,13 +10,15 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 30px;
-  background-color: #000;
+  background-color: #121212;
   color: white;
   font-size: 12px;
   height: 50px;
   width: 100%;
   position: relative;
   box-sizing: border-box;
+  margin-top: 15px;
+  border-radius: 15px;
 }
 
 .navbar-links {
@@ -34,7 +37,7 @@
 }
 
 .navbar-links a:hover {
-  color: #ccc ;
+  color: #ccc;
 }
 
 .logo {
@@ -72,21 +75,23 @@
 
   .sidebar {
     position: fixed;
-    top: 50px;
+    top: 0;
     right: 0;
     height: 100%;
-    width: 150px;
-    background-color: #000;
+    width: 200px;
+    background-color: #121212;
     color: white;
     transform: translateX(100%);
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease;
     z-index: 1000;
     padding: 20px;
     box-sizing: border-box;
     display: block;
+    overflow-y: auto;
   }
 
   .sidebar.open {
+    padding-top: 50px;
     transform: translateX(0);
   }
 
@@ -166,5 +171,23 @@
     transform: rotate(-45deg);
     top: 5px;
     width: 50%;
+  }
+
+
+  .close-btn {
+    background: none;
+    border: none;
+    color: #ffff;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 1001;
+    transition: color 0.3s ease;
+  }
+
+  .close-btn:hover {
+    color: #ccc;
   }
 }
