@@ -9,10 +9,10 @@ export class NavBarComponent {
   isSidebarOpen = false;
 
   navLinks = [
-    { path: '/basic/home', label: 'Home' },
-    { path: '/basic/services', label: 'Services' },
-    { path: '/basic/about', label: 'About' },
-    { path: '/basic/contact', label: 'Contact' }
+    { path: '/basic/home', label: 'Inicio' },
+    { path: '/basic/about', label: 'Acerca de' },
+    { path: '/basic/portfolio', label: 'Portafolio' },
+    { path: '/basic/contact', label: 'Contacto' }
   ];
 
   // Alterna el estado del sidebar

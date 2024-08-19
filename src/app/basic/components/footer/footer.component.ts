@@ -8,10 +8,10 @@ import { Router } from '@angular/router';
 })
 export class FooterComponent {
   navLinks = [
-    { path: '/home', label: 'Home' },
-    { path: '/services', label: 'Servicios' },
-    { path: '/about', label: 'About' },
-    { path: '/contact', label: 'Contact' }
+    { path: '/home', label: 'Inicio' },
+    { path: '/about', label: 'Acerca de' },
+    { path: '/portfolio', label: 'Portafolio' },
+    { path: '/contact', label: 'Contacto' }
   ];
 
   constructor(private router: Router) {}
