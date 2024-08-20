@@ -1,0 +1,37 @@
+.container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 40%;
+  height: auto;
+}
+
+.presentacion {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.perfil {
+  width: 200px;
+  height: 200px;
+  background: #121212;
+  border-radius: 15px;
+}
+
+
+.saludo {
+  width: 200px;
+  height: 200px;
+  background: #121212;
+  border-radius: 15px;
+}
+
+.skills {
+  margin-top: 10px;
+  max-width: 100%;
+  width: 410px;
+  height: 410px;
+  background: #121212;
+  border-radius: 15px;
+}
+

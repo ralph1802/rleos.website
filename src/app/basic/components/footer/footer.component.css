@@ -1,53 +1,91 @@
 .footer {
   width: 70%;
   margin: auto;
-  display: flex;
-  justify-content: space-around;
   background-color: #121212;
   padding-top: 20px;
   border-radius: 15px 15px 0px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
-.logo {
-  display: none;
+.footer h3 {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.footer-section {
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.logotipo  {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+
+
+/* -------------- menu -------------- */
+.menu {
+  width: 100%;
+  height: 70px;
+}
+.menu a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
   color: #fff;
   padding: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
-.footer-section h3 {
-  font-size: 16px;
+
+
+/* -------------- redes -------------- */
+.redes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
-.footer-section ul {
-  list-style: none;
-  padding: 0;
+.redes a {
+  margin: 10px;
+  display: block;
 }
 
-.footer-section ul li {
-  padding: 5px;
+.social-icon {
+  display: block;
 }
 
-.footer-section ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 300;
-  font-size: 16px;
+.hover {
+  display: none;
 }
 
-.footer-section ul li a:hover {
-  text-decoration: underline;
+.redes a:hover .color {
+  display: none;
+}
+
+.redes a:hover .hover {
+  display: block;
 }
 
 
-.footer-section p a:hover {
-  text-decoration: underline;
-}
 
+
+
+
+
+
+
+
+
+/* -------------- dev.by -------------- */
 .dev {
   width: 70%;
   margin: auto;
@@ -65,7 +103,6 @@
   margin: 0;
 }
 
-/* Estilos para el enlace dentro del contenedor */
 .dev a {
   color: #fff;
   text-decoration: none;
@@ -76,38 +113,14 @@
 }
 
 
+/* -------------- query -------------- */
 @media (max-width: 800px) {
-  .footer {
-    text-align: center;
+  .menu {
+    display: flex;
     flex-direction: column;
+    height: auto;
   }
-
-  .footer-section {
-    margin-bottom: 10px;
+  .menu a {
+    padding: 20px;
   }
-
-  .footer-section a {
-    min-height: 48px;
-    min-width: 48px;
-    padding: 10px;
-    font-size: 16px;
-  }
-
-  .footer-section li {
-    margin-bottom: 20px;
-  }
-
-  .logo {
-    display: block;
-    margin-bottom: 20px;
-  }
-
-  .logo img {
-    width: 100px;
-  }
-
-  .dev {
-    text-align: center;
-  }
-
 }

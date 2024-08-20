@@ -7,6 +7,7 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { PortfolioPageComponent } from './pages/portfolio-page/portfolio-page.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { PortfolioPageComponent } from './pages/portfolio-page/portfolio-page.co
     ContactPageComponent,
     HomePageComponent,
     PortfolioPageComponent,
+    SkillsComponent,
 
   ],
   imports: [
