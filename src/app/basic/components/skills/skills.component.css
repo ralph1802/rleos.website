@@ -1,37 +1,360 @@
-.container {
+/* ----------- contenedor primero ----------- */
+.container-first {
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 40%;
+  width: 100%;
   height: auto;
-}
-
-.presentacion {
   display: flex;
-  gap: 10px;
+  justify-content: space-between;
+}
+
+/* ----------- presentacion ----------- */
+
+.presentation {
+  width: 30%;
+  height: auto;
+  background: #121212;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.perfilPicture {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.greetings {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.name {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.career {
+  font-size: 14px;
+  font-weight: 200;
+  color: #e0e0e0 ;
+}
+
+
+/* ----------- redes sociales ----------- */
+.contact {
+  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.perfil {
-  width: 200px;
-  height: 200px;
+.color,
+.hover {
+  width: 20px;
+}
+
+.contact a {
+  margin: 10px;
+  display: block;
+}
+
+.social-icon {
+  display: block;
+}
+
+.hover {
+  display: none;
+}
+
+.contact a:hover .color {
+  display: none;
+}
+
+.contact a:hover .hover {
+  display: block;
+}
+
+/* ----------- botones ----------- */
+.buttons {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.talkToMe {
+  background: #0E7065;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 0;
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+  outline: none;
+  justify-content: center;
+}
+
+.talkToMe:hover {
+  background: #094d47;
+  border: none;
+  color: #fff;
+}
+
+
+.cv {
+  background: none;
+  border: solid .5px #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 0;
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+  outline: none;
+  justify-content: center;
+}
+
+.cv:hover {
+  background: #0a0a0a;
+  border: solid .5px #fff;
+  color: #fff;
+}
+
+/* ----------- experiencia ----------- */
+.experience {
+  width: 69%;
+  height: auto;
   background: #121212;
+  border-radius: 10px;
+  color: #FFFF;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.recent {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   border-radius: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #0E7065;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: 400;
+}
+
+.second {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #3A3A3A;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.position {
+  width: 35%;
+  margin-bottom: 10px;
 }
 
 
-.saludo {
-  width: 200px;
-  height: 200px;
-  background: #121212;
-  border-radius: 15px;
-}
 
-.skills {
+
+
+
+
+/* ----------- contenedor segundo ----------- */
+.container-second {
   margin-top: 10px;
-  max-width: 100%;
-  width: 410px;
-  height: 410px;
-  background: #121212;
-  border-radius: 15px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
+
+/* ----------- lenguages ----------- */
+.lenguages {
+  width: 25%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: #121212;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 20px;
+  gap: 20px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  /* text-align: center; */
+}
+
+.english, .spanish {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.idiom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.porcent-75 {
+  width: 75%;
+  border-bottom: solid 10px #0E7065;
+}
+
+.porcent-100 {
+  width: 100%;
+  border-bottom: solid 10px #0E7065;
+}
+
+
+
+/* ----------- education ----------- */
+.education {
+  width: 74%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.dateStudies {
+  color: #9A9A9A
+}
+
+.university {
+  color: #0E7065;
+  font-weight: 500;
+}
+
+.engineering {
+  width: 50%;
+  height: auto;
+  background: #121212;
+  border-radius: 10px;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.developer {
+  width: 49%;
+  height: auto;
+  background: #121212;
+  border-radius: 10px;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+  /* ----------- contenedor primero ----------- */
+  .container-first{
+    flex-direction: column;
+  }
+  .presentation {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .card {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .perfilPicture {
+    width: 100px;
+  }
+
+  .experience{
+    width: 100%;
+  }
+
+
+  .position{
+    width: 100%;
+  }
+
+  /* ----------- contenedor segundo ----------- */
+  .container-second {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .education {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .engineering,
+  .developer {
+    width: 100%;
+  }
+
+  .lenguages {
+    width: 100%;
+    flex-direction: column;
+  }
+
+
+}

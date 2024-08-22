@@ -5,6 +5,12 @@
   margin: auto;
 }
 
+@media only screen and (max-width: 500px) {
+  .navbar-container {
+    width: 85%;
+  }
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -18,7 +24,7 @@
   position: relative;
   box-sizing: border-box;
   margin-top: 15px;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .navbar-links {
