@@ -9,8 +9,8 @@ export class NavBarComponent {
   isSidebarOpen = false;
 
   navLinks = [
-    { path: '/basic/home', label: 'Inicio' },
-    { path: '/basic/about', label: 'Acerca de' },
+    { path: '/basic/home', label: 'Acerca de' },
+    // { path: '/basic/about', label: 'Acerca de' },
     { path: '/basic/portfolio', label: 'Portafolio' },
     { path: '/basic/contact', label: 'Contacto' }
   ];
