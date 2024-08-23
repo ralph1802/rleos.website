@@ -8,6 +8,8 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { PortfolioPageComponent } from './pages/portfolio-page/portfolio-page.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { StackComponent } from './components/stack/stack.component';
+import { HerramientasComponent } from './components/herramientas/herramientas.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { SkillsComponent } from './components/skills/skills.component';
     HomePageComponent,
     PortfolioPageComponent,
     SkillsComponent,
+    StackComponent,
+    HerramientasComponent,
 
   ],
   imports: [
