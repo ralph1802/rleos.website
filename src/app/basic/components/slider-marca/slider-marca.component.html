@@ -1,0 +1,12 @@
+<div class="slider" (swipeleft)="nextSlide()" (swiperight)="prevSlide()">
+  <div class="slide-track" #slideTrack>
+    <div class="slide" *ngFor="let slide of slides; let i = index" [ngClass]="{'active': currentSlide === i}">
+      <img [src]="slide" alt="">
+    </div>
+  </div>
+  <div class="nav-dots">
+    <span *ngFor="let dot of slides; let i = index"
+          [ngClass]="{'active': currentSlide === i}"
+          (click)="goToSlide(i)"></span>
+  </div>
+</div>

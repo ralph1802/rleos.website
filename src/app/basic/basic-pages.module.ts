@@ -10,6 +10,11 @@ import { PortfolioPageComponent } from './pages/portfolio-page/portfolio-page.co
 import { SkillsComponent } from './components/skills/skills.component';
 import { StackComponent } from './components/stack/stack.component';
 import { HerramientasComponent } from './components/herramientas/herramientas.component';
+import { TrabajoComponent } from './components/trabajo/trabajo.component';
+import { SliderComponent } from './components/slider/slider.component';
+import { MarcaComponent } from './components/marca/marca.component';
+import { SliderMarcaComponent } from './components/slider-marca/slider-marca.component';
+import { ProximamenteComponent } from './components/proximamente/proximamente.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +25,11 @@ import { HerramientasComponent } from './components/herramientas/herramientas.co
     SkillsComponent,
     StackComponent,
     HerramientasComponent,
+    TrabajoComponent,
+    SliderComponent,
+    MarcaComponent,
+    SliderMarcaComponent,
+    ProximamenteComponent,
 
   ],
   imports: [

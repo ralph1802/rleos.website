@@ -1,0 +1,39 @@
+.container {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: #121212;
+
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+h3 {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+
+.galery {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img {
+  border-radius: 10px;
+  width: 300px;
+}

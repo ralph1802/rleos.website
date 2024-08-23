@@ -11,7 +11,7 @@ export class NavBarComponent {
   navLinks = [
     { path: '/basic/home', label: 'Acerca de' },
     // { path: '/basic/about', label: 'Acerca de' },
-    { path: '/basic/portfolio', label: 'Portafolio' },
+    { path: '/basic/portfolio', label: 'Trabajos' },
     { path: '/basic/contact', label: 'Contacto' }
   ];
 
