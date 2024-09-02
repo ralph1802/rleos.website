@@ -12,7 +12,7 @@ export class NavBarComponent {
     { path: '/basic/home', label: 'Acerca de' },
     // { path: '/basic/about', label: 'Acerca de' },
     { path: '/basic/portfolio', label: 'Trabajos' },
-    { path: '/basic/contact', label: 'Contacto' }
+    // { path: '/basic/contact', label: 'Contacto' }
   ];
 
   // Alterna el estado del sidebar

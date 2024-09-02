@@ -9,9 +9,9 @@ export class SliderMarcaComponent implements AfterViewInit {
   @ViewChild('slideTrack') slideTrack: ElementRef | undefined;
 
   slides: string[] = [
-    'assets/images/home2.png',
-    'assets/images/home4.png',
-    'assets/images/home5.png',
+    'assets/images/home1.svg',
+    'assets/images/home2.svg',
+    'assets/images/home3.svg',
   ];
 
   currentSlide: number = 0;
